@@ -134,6 +134,7 @@ cp .env.template .env
     a. OpenAI GPT-4o
         1. Get your API key: https://platform.openai.com/api-keys
         2. Add to .env:
+
             ```text
 
             OPENAI_API_KEY=sk-your-key
@@ -141,24 +142,30 @@ cp .env.template .env
             BACKEND=openai
 
             ```
+
     b. Ollama (Free & Local)
         1. Install Ollama → https://ollama.com/download
         2. Pull a model:
+
             ```text
 
             ollama pull llama3
 
             ```
+
         3. Set in .env:
+
             ```text
 
             BACKEND=ollama
             MODEL_NAME=llama3
 
             ```
+
     c. Hugging Face (Mistral Model)
         1. Create token → https://huggingface.co/settings/tokens
         2. Add to .env:
+
             ```text
 
             HF_API_TOKEN=hf_your_token
@@ -166,12 +173,15 @@ cp .env.template .env
             MODEL_NAME=mistralai/Mistral-7B-Instruct
 
             ```
+
 6. Run the app
+
     ```text
 
     python -m streamlit run src/main.py
 
     ```
+    
     Then open http://localhost:8501
 
 ## Usage

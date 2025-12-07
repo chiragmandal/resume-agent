@@ -53,6 +53,9 @@ This project showcases an **end-to-end agentic AI workflow**:
 
 
 ## Folder Structure
+
+```text
+
 resume-agent/
 │
 ├── src/
@@ -83,13 +86,14 @@ resume-agent/
 ├── duty.py
 └── README.md
 
-
+```
 
 ## Setup Guide
 
 1. Clone the repository
 
-```
+```text 
+
 git clone https://github.com/chiragmandal/resume-agent.git
 cd resume-agent
 
@@ -98,7 +102,8 @@ cd resume-agent
 2. Create and activate the virtual environment
 
 
-```
+```text
+
 python3 -m venv .venv
 source .venv/bin/activate     # macOS/Linux
 # .venv\Scripts\activate      # Windows
@@ -107,7 +112,8 @@ source .venv/bin/activate     # macOS/Linux
 
 3. Install Dependancies
 
-```
+```text
+
 pip install --upgrade pip
 pip install -r requirements.txt
 
@@ -117,7 +123,8 @@ pip install -r requirements.txt
 
 Copy the template
 
-```
+```text
+
 cp .env.template .env
 
 ```
@@ -127,7 +134,8 @@ cp .env.template .env
     a. OpenAI GPT-4o
         1. Get your API key: https://platform.openai.com/api-keys
         2. Add to .env:
-            ```
+            ```text
+
             OPENAI_API_KEY=sk-your-key
             MODEL_NAME=gpt-4o
             BACKEND=openai
@@ -136,12 +144,14 @@ cp .env.template .env
     b. Ollama (Free & Local)
         1. Install Ollama → https://ollama.com/download
         2. Pull a model:
-            ```
+            ```text
+
             ollama pull llama3
 
             ```
         3. Set in .env:
-            ```
+            ```text
+
             BACKEND=ollama
             MODEL_NAME=llama3
 
@@ -149,14 +159,16 @@ cp .env.template .env
     c. Hugging Face (Mistral Model)
         1. Create token → https://huggingface.co/settings/tokens
         2. Add to .env:
-            ```
+            ```text
+
             HF_API_TOKEN=hf_your_token
             BACKEND=huggingface
             MODEL_NAME=mistralai/Mistral-7B-Instruct
 
             ```
 6. Run the app
-    ```
+    ```text
+
     python -m streamlit run src/main.py
 
     ```
@@ -171,7 +183,7 @@ cp .env.template .env
 
 
 ## Docker Usage
-```
+```text
 
 docker build -t resume-agent .
 docker run -p 8501:8501 --env-file .env resume-agent

@@ -132,11 +132,12 @@ cp .env.template .env
 5. Choose your LLM backend
 
     a. OpenAI GPT-4o
+
         1. Get your API key: https://platform.openai.com/api-keys
 
         2. Add to .env:
 
-            ```
+            ```text
 
                 OPENAI_API_KEY=sk-your-key
                 MODEL_NAME=gpt-4o
@@ -145,18 +146,20 @@ cp .env.template .env
             ```
 
     b. Ollama (Free & Local)
+
         1. Install Ollama → https://ollama.com/download
 
         2. Pull a model:
 
-            ```
+            ```text
+
                 ollama pull llama3
 
             ```
 
         3. Set in .env:
 
-            ```
+            ```text
 
                 BACKEND=ollama
                 MODEL_NAME=llama3
@@ -164,11 +167,12 @@ cp .env.template .env
             ```
 
     c. Hugging Face (Mistral Model)
+    
         1. Create token → https://huggingface.co/settings/tokens
 
         2. Add to .env:
 
-            ```
+            ```text
 
                 HF_API_TOKEN=hf_your_token
                 BACKEND=huggingface

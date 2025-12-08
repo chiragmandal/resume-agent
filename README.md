@@ -131,7 +131,7 @@ cp .env.template .env
 
 5. Choose your LLM backend
 
-    a. OpenAI GPT-4o
+    ### a. OpenAI GPT-4o
 
         1. Get your API key: https://platform.openai.com/api-keys
 
@@ -145,7 +145,7 @@ cp .env.template .env
 
             ```
 
-    b. Ollama (Free & Local)
+    ### b. Ollama (Free & Local)
 
         1. Install Ollama → https://ollama.com/download
 
@@ -166,7 +166,7 @@ cp .env.template .env
 
             ```
 
-    c. Hugging Face (Mistral Model)
+    ### c. Hugging Face (Mistral Model)
 
         1. Create token → https://huggingface.co/settings/tokens
 

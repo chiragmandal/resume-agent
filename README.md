@@ -137,7 +137,7 @@ cp .env.template .env
 
         2. Add to .env:
 
-            ```text
+            ```bash
 
                 OPENAI_API_KEY=sk-your-key
                 MODEL_NAME=gpt-4o
@@ -151,7 +151,7 @@ cp .env.template .env
 
         2. Pull a model:
 
-            ```text
+            ```bash
 
                 ollama pull llama3
 
@@ -159,7 +159,7 @@ cp .env.template .env
 
         3. Set in .env:
 
-            ```text
+            ```bash
 
                 BACKEND=ollama
                 MODEL_NAME=llama3
@@ -167,12 +167,12 @@ cp .env.template .env
             ```
 
     c. Hugging Face (Mistral Model)
-    
+
         1. Create token → https://huggingface.co/settings/tokens
 
         2. Add to .env:
 
-            ```text
+            ```bash
 
                 HF_API_TOKEN=hf_your_token
                 BACKEND=huggingface
